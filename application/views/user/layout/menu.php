@@ -167,8 +167,8 @@
                 <div class="col-md-6 mb-3">
                     <label for="service" class="form-label">Layanan yang Dipilih</label>
                     <select name="service" id="service" class="form-select" required>
-                        <?php if (isset($service) && !empty($service)): ?>
-                            <?php foreach ($service as $val): ?>
+                        <?php if (isset($services) && !empty($services)): ?>
+                            <?php foreach ($services as $val): ?>
                                 <option value="<?= $val->idServices; ?>"><?= $val->Snama; ?></option>
                             <?php endforeach; ?>
                         <?php else: ?>
